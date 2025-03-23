@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff5f7;
+    color: #5a4a4f;
+    line-height: 1.6;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px 0 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #ffe8f0;
+    box-shadow: 0 8px 20px rgba(214, 87, 140, 0.1);
+    margin-bottom: 40px;
+}
+.container-decor{
+    position: relative;
+    padding-top: 0px;
+}
+
+h1 {
+    font-size: 3.2rem;
+    color: #ff4d8d;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 3px rgba(255, 77, 141, 0.15);
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    color: #c27ba0;
+    margin-bottom: 25px;
+}
+
+.cake-icon {
+    font-size: 3rem;
+    margin: 15px 0;
+    display: inline-block;
+    animation: bounce 2s infinite;
+    padding-top: 20px;
+}
+
+/* Birthday Info Section */
+.birthday-info {
+    background-color: white;
+    border-radius: 20px;
+    padding: 35px 40px;
+    margin: 30px auto;
+    box-shadow: 0 10px 25px rgba(214, 87, 140, 0.12);
+    position: relative;
+    max-width: 800px;
+    border: 2px dashed #ffc2d8;
+}
+
+.birthday-details {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.birthday-details h2 {
+    color: #ff4d8d;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.birthday-details p {
+    font-size: 1.25rem;
+    color: #c27ba0;
+    margin-bottom: 15px;
+    background-color: #fffafc;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 50px;
+    box-shadow: 0 3px 10px rgba(214, 87, 140, 0.08);
+}
+
+/* Envelope & Letter Section */
+.envelope {
+    background: linear-gradient(135deg, #ffddec 0%, #fff5f7 100%);
+    border-radius: 18px;
+    padding: 30px;
+    max-width: 650px;
+    margin: 50px auto 60px;
+    box-shadow: 0 10px 30px rgba(214, 87, 140, 0.15);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    border: 1px solid #ffd6e7;
+}
+
+.envelope:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 15px 35px rgba(214, 87, 140, 0.2);
+}
+
+.envelope:after {
+    content: "💌";
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 2.5rem;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+}
+
+.envelope h2 {
+    text-align: center;
+    color: #ff4d8d;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.letter {
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+    margin-top: 25px;
+    display: none;
+    border: 1px solid #ffeef6;
+    box-shadow: 0 8px 20px rgba(214, 87, 140, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.letter p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #664e57;
+}
+
+.letter .signature {
+    text-align: right;
+    font-style: italic;
+    margin-top: 35px;
+    font-size: 1.2rem;
+    color: #c27ba0;
+}
+
+/* Music Player Section */
+.music-player {
+    background: linear-gradient(135deg, #fff0f7 0%, #fff7fc 100%);
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    margin: 40px auto;
+    box-shadow: 0 10px 30px rgba(214, 87, 140, 0.12);
+    max-width: 650px;
+    border: 2px solid #fff;
+}
+
+.music-player h2 {
+    color: #ff4d8d;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+.music-controls {
+    margin: 25px 0;
+}
+
+.music-controls button {
+    background: linear-gradient(to right, #ff4d8d, #ff85ad);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    margin: 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 77, 141, 0.3);
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.music-controls button:hover {
+    background: linear-gradient(to right, #ff3a7f, #ff6d9e);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(255, 77, 141, 0.4);
+}
+
+.music-controls button:active {
+    transform: translateY(1px);
+}
+
+/* Decorations */
+.decoration {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.7;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
+}
+
+.decoration-1 {
+    top: 60px;
+    left: -30px;
+    font-size: 3.5rem;
+    color: #ffb8d2;
+    transform: rotate(-20deg);
+}
+
+.decoration-2 {
+    bottom: 100px;
+    right: -20px;
+    font-size: 4.5rem;
+    color: #ffc8dc;
+    transform: rotate(15deg);
+}
+
+.decoration-3 {
+    top: 220px;
+    right: 80px;
+    font-size: 3rem;
+    color: #ffb8d2;
+    transform: rotate(10deg);
+}
+
+.decoration-4 {
+    bottom: 240px;
+    left: 60px;
+    font-size: 4rem;
+    color: #ffc8dc;
+    transform: rotate(-10deg);
+}
+
+/* Confetti Styles */
+.confetti {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background-color: #ff4d8d;
+    opacity: 0.7;
+    position: absolute;
+    top: -20px;
+    z-index: 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.floating {
+    animation: float 4s ease-in-out infinite;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .birthday-info {
+        padding: 25px 20px;
+    }
+    
+    .envelope {
+        padding: 25px 20px;
+    }
+    
+    .letter {
+        padding: 25px 20px;
+    }
+    
+    .decoration {
+        opacity: 0.4;
+        font-size: 2rem !important;
+    }
+    
+    .decoration-1 {
+        top: 20px;
+        left: 10px;
+    }
+    
+    .decoration-2 {
+        bottom: 50px;
+        right: 10px;
+    }
+    
+    .decoration-3, .decoration-4 {
+        display: none;
+    }
+    
+    .music-controls button {
+        padding: 10px 20px;
+        margin: 5px;
+        font-size: 1rem;
+    }
+}
